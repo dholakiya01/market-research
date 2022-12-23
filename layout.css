@@ -1091,6 +1091,7 @@ footer {
         width: 100%;
         margin-top: 10px;
         text-align: center;
+        overflow-y: hidden;
     }
     .tr {
         flex-wrap: wrap;
@@ -1133,5 +1134,14 @@ footer {
         width: 100%;
         padding: 20px 0;
         text-align: center;
+    }
+}
+
+@media( max-width:600px) {
+    tr {
+        flex-direction: column;
+    }
+    .main8-in3 {
+        overflow-y: hidden;
     }
 }
