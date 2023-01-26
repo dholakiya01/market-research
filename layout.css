@@ -163,6 +163,7 @@ h1 {
 
 .color .col {
     width: 22%;
+    overflow-y: hidden;
 }
 
 .col {
@@ -568,7 +569,7 @@ h3 p {
 }
 
 .icon {
-    width: 20%;
+    width: 40%;
 }
 
 .icon i {
@@ -645,7 +646,7 @@ p {
 
 .section7 {
     width: 100%;
-    padding: 150px;
+    padding: 100px 0;
     background-color: #082c4e;
 }
 
@@ -886,7 +887,7 @@ p {
 footer {
     width: 100%;
     background-color: #082c4e;
-    padding: 100px;
+    padding: 100px 0;
 }
 
 .main8 {
@@ -975,15 +976,22 @@ footer {
 
 /* @media query  */
 
+@media(max-width:1200px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 @media(max-width:800px) {
     * {
         overflow-x: hidden;
         word-wrap: break-word;
     }
-    .container {
+    /* .container {
         padding-left: 20px;
         padding-right: 20px;
-    }
+    } */
 }
 
 @media(max-width:800px) {
@@ -994,6 +1002,9 @@ footer {
 }
 
 @media( max-width:800px) {
+    td:first-child {
+        width: 100%;
+    }
     .main1 {
         flex-wrap: wrap;
         word-wrap: wrap;
@@ -1039,6 +1050,7 @@ footer {
     }
     .partner {
         flex-wrap: wrap;
+        justify-content: center;
     }
     .text1 {
         text-align: center;
@@ -1049,10 +1061,12 @@ footer {
     }
     .pink {
         text-align: center;
+        flex-direction: column-reverse;
     }
     .icon i {
         text-align: center;
         flex-wrap: wrap;
+        width: 100%;
     }
     .innovation {
         text-align: center;
@@ -1062,6 +1076,13 @@ footer {
     }
     .main4 {
         flex-wrap: wrap;
+    }
+    .section7-in h3 {
+        font-size: 50px;
+    }
+    .box3 img {
+        width: 50%;
+        margin: 0 auto;
     }
     .box3 {
         width: 50%;
@@ -1092,8 +1113,8 @@ footer {
         margin-top: 10px;
         text-align: center;
     }
-    .tr {
-        flex-wrap: wrap;
+    tr {
+        flex-direction: column;
     }
     .main6 {
         flex-wrap: wrap;
@@ -1121,6 +1142,7 @@ footer {
     .main8-in3 {
         width: 100%;
         text-align: center;
+        overflow-y: hidden;
     }
     .copy {
         flex-wrap: wrap;
@@ -1133,5 +1155,100 @@ footer {
         width: 100%;
         padding: 20px 0;
         text-align: center;
+    }
+}
+
+@media(max-width:500px) {
+    .header-in h5 {
+        font-size: 35px;
+    }
+    .header-in button {
+        font-size: 20px;
+        padding: 15px;
+    }
+    .box1 h2 {
+        font-size: 35px;
+    }
+    .box1 a {
+        font-size: 35px;
+    }
+    .box2 h2 {
+        font-size: 50px;
+    }
+    td:first-child {
+        width: 100%;
+    }
+    .text1 h3 {
+        font-size: 35px;
+    }
+    .text1 p {
+        font-size: 15px;
+    }
+    .section7-in h3 {
+        font-size: 30px;
+    }
+    .box3 {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+    }
+    .box3 img {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .part1 {
+        margin-bottom: 0;
+    }
+    .part1 h3 {
+        font-size: 25px;
+        padding-top: 10px;
+    }
+    .part1 p {
+        font-size: 15px;
+    }
+    .part1 i {
+        font-size: 50px;
+    }
+    .innovation h3 {
+        font-size: 20px;
+    }
+    .innovation p {
+        font-size: 15px;
+    }
+    .innovation h4 {
+        font-size: 15px;
+    }
+    .innovation b {
+        font-size: 15px;
+    }
+    .main5 .box4 {
+        padding: 40px 20px;
+    }
+    .main5 p {
+        font-size: 12px;
+    }
+    .main5 h4 {
+        font-size: 15px;
+    }
+    .main5 a {
+        font-size: 12px;
+    }
+    .form1 input {
+        width: 100%;
+    }
+    .form1 h4 {
+        margin-bottom: 50px;
+    }
+    .main8-in1 p {
+        font-size: 15px;
+    }
+    .box1 {
+        margin: 0;
+    }
+    .icon {
+        text-align: center;
+    }
+    .pink-size {
+        width: 100%;
     }
 }
